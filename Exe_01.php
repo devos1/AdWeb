@@ -14,28 +14,36 @@
     </head>
     <body>
         <?php
+            // Constante pour définir le nb max
+            define("nbMax", 12);
+            // Variables pour le style
+            $align = "align='center'";
+            $width = "width='30px'";
+            $fontColor = "style='color: white'";
+            $bgColor = "bgcolor='#8a2be2'";
+
             echo("<h1>Exercice 01 - Table de multiplication</h1>\n");
             echo("<hr>");
             echo("<table border='1'>");
-            for ($i = 0; $i <= 12; $i++) {
+            for ($i = 0; $i <= nbMax; $i++) {
                 echo("<tr>");
-                for($j = 0 ; $j <= 12 ; $j++){
+                for($j = 0 ; $j <= nbMax ; $j++){
                     if($i == 0 and $j == 0){
-                        echo("<td align='center' width='30px' style='color: white' bgcolor='#8a2be2'>");
+                        echo("<td $align $width $fontColor $bgColor>");
                         echo("X");
                         echo("</td>");
                     }elseif($i == 0){
-                        echo("<td align='center' width='30px' style='color: white' bgcolor='#8a2be2'>");
+                        echo("<td $align $width $fontColor $bgColor>");
                         echo("$j");
                         echo("</td>");
                     }
                     elseif($j == 0){
-                        echo("<td align='center' style='color: white' bgcolor='#8a2be2'>");
+                        echo("<td $align $fontColor $bgColor>");
                         echo("$i");
                         echo("</td>");
                     }else{
                         $result = $i * $j;
-                        echo("<td align='center'>");
+                        echo("<td $align>");
                         echo("$result");
                         echo("</td>");
                     }
