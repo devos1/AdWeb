@@ -2,6 +2,7 @@
 * User          : oscar
 * Date          : 20.12.14
 * Time          : 16:24
+* Comment       : Le formulaire n'est pas dans un tableau mais alignement fait en CSS
 * Optimisation  : Contrôler que l'âge soit dans une limite MIN-MAX
 -->
 
