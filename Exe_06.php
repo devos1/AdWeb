@@ -2,8 +2,7 @@
 * User          : oscar
 * Date          : 21.12.14
 * Time          : 15:35
-* Comment       : Voir comment savoir que le formulaire a été envoyé, mais aucune case cochée
-*               : car là ça ne fonctionne pas!!
+* Comment       : Utilisation champ caché pour le contrôle du nb de couleurs et formlaure reçu
 * Optimisation  :
 -->
 
