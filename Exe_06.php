@@ -40,15 +40,16 @@
                 }
             echo("</table>");
             echo("<br/>");
+            echo("<input type='hidden' name='test'>");
             echo("<input type='submit' value='Voir le résultat'>");
             echo("</form>");
 
             // Récupération des infos
-            if(!empty($_POST)) {
-                if (isset($_POST['choix'])) {
+            if(isset($_POST['test'])){
+                if(array_count_values($_POST['choix']) > 0){
                     $couleurs = implode(', ', $_POST["choix"]);
                     echo("<p>Vos couleurs préférées sont : $couleurs</p>");
-                } else {
+                }else{
                     echo("<p style='color: red'>Aucune couleur choisie</p>");
                 }
             }
