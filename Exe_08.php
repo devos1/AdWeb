@@ -54,7 +54,7 @@
 
     ?>
 
-    <!-- Fonction pour mettre à jour le formulaire -->
+    <!-- Fonction pour mettre des input:text-->
     <?
         function afficheValue($name)
         {
